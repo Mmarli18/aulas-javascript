@@ -1,4 +1,5 @@
 'use script';
+/* VETOR (Array de uma dimensão) */
 
 // Sinal de colchete [] significa uma lista
 const alunos = ["Wilian", "Vínicius", "Marli", "Duda", "Gabriel"];
@@ -17,8 +18,19 @@ const hobby = ["Leitura", "Andar de Bike", "Filmes", "Viajar", "Barzinho", "Shop
 
 console.log(hobby);
 
-console.log(`Meu hobby favorito é ${hobby[1]} curtir um ${hobby[4]} com muita música ${hobby[6]}.`)
+console.log(`Meu hobby favorito é ${hobby[1]} curtir um ${hobby[4]} com muita música ${hobby[6]}.`);
 
+/* Matriz (array com mais de uma dimensão) */
+const tecnologias = [
+
+    ["HTML5", "CSS3", "JAVASCRIPT"],
+
+    ["PHP", "Node.js", "SQL", "Python", "Firebase"]
+
+];
+
+// Css3
+console.log(tecnologias[0][1]);
 
 
 
