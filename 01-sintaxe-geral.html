@@ -11,6 +11,10 @@
 
     <!-- Toda programação em JS precisa estar dentro de uma tag script ou apontar para um script externo. Normalmente, o script fica no final da págnia antes de terminar o body -->
     <script>
+        /* Habilitando o modo estrito da linguagem 
+        Ao fazer isso, a linguagem passa a analisar se você declarou variáveis e não está usando palavras-reservadas. Se isso acontecer, erros serão exibidos.*/ 
+        'use strict';
+
         // Comentario de apenas uma linha (crtl + ;)
         /* Comentario de multiplas linhas (Shift + Alt + A) */
 
@@ -19,17 +23,36 @@
 
         /* Manipulação de dados */
 
+        // Usamos Let para declarar variave
+
         // Variaveis (valores podem ser modificados)
          let curso = "HTML5 e CSS3";  //string, literal (entre aspas)
-        let ano = 2024; //números (inteiro/real), sem aspas
+         let ano = 2024; //números (inteiro/real), sem aspas
+
+        //  variavel sem valor definido
+         let disciplina;   
+         console.log(disciplina);
+
+         disciplina = "Lógica";
+         console.log(disciplina);
 
         // Constantes (valores fixos que não ser modificados)
         const escola = "Senac Penha"
+
+        // Constantes SEMPRE devem ter valor
+        const materia = "Português"
 
         // Saída de dados
         console.log(curso);
         console.log(ano);
         console.log(escola);
+
+        let nomedavariavel = "Algum valor"
+        console.log(nomedavariavel);
+
+        /* Palavras-chaves de uso reservado: public, implements, private, arguments */
+        // let public = "Palavra reservada";
+        // console.log(public);
     </script>
 </body>
 </html>
