@@ -27,13 +27,36 @@ if(numero > 5){
 // Condicional composta
 
 let usuario = "Ozzy Osbourne";
-let idade = 18;
+let idade = 60;
+
+// Variavel com proposito de guardar a palavra "maior ou menor"
+ let texto; // undefined/indefinida
 
 if(idade >= 18){
-
-    console.log(`${usuario} é maior de idade.`);
-    
+    texto = "maior";
 } else {
-    console.log(`${usuario} é menor de idade`);
+    texto = "menor";
+}
 
-};
+console.log(`${usuario} é ${texto} de idade.`);
+
+console.log("if/else usando termário ?:");
+let texto2 = idade >= 18 ? "maior" : "menor";
+
+console.log(`${usuario} é ${texto2} de idade.`);
+
+
+// Condicional Encadeada/Sucessiva
+
+let texto3; 
+if(idade >= 60){
+    texto3 = "idoso(a)";
+}else if(idade >=18){
+        texto3 = "adulto(a)";
+}else {
+    texto3 = "menor de idade";
+}
+
+console.log(`${usuario} tem ${idade} anos e é ${texto3}`);
+
+
