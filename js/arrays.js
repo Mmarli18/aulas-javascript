@@ -29,8 +29,9 @@ const tecnologias = [
 
 ];
 
-// Css3
-console.log(tecnologias[0][1]);
+console.log(tecnologias[0][1]); // Css3
+
+console.log(tecnologias[1][3]); // Python
 
 
 
