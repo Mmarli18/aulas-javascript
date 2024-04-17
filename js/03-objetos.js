@@ -63,3 +63,33 @@ console.log(
     ` O ${pessoa.nome} tem ${pessoa.medidasFisicas.peso}kg e ${pessoa.medidasFisicas.altura}m de altura. Contato ${pessoa.telefone[1]}.
 `
 );
+
+// Arrays de objetos
+
+const livros = [
+    {
+        titulo: "Harry Potter",
+        autor: "J.K. Rowling"
+    },
+
+    {
+        titulo: "Crônicas de Nárnia",
+        autor: "C.S. Lewis"
+    },
+
+    {
+        titulo: "Crônicas de Olam",
+        autor: "L.L. Wurlitzer"
+
+    }
+
+];
+
+// Cronicas de Narnia
+console.log(livros[1].titulo); 
+
+console.log("--------------------");
+
+console.table(livros);
+
+/* A alternativa para exibição e analise de arrays */
