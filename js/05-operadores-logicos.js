@@ -40,3 +40,15 @@ if (onibus ==2203 ||onibus == 2019){
 } else {
     console.log("Não passa no Senac, aguarde");
 }
+
+console.log("---------------");
+
+// Operador de negação/NOT (!)
+let blackfriday = false; // false simboliza "não ativo"
+
+// Se blackfriday NÃO for verdadeira
+if(blackfriday){
+    console.log("Preços Normais...");
+} else {
+    console.log("Black Friday, ativo! Descontos");
+}
