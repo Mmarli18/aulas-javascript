@@ -19,7 +19,41 @@ while(contador <=5){
 }
 */
 
-// Loop FOR
-for(let contador =1; contador <=10; contador++){
-    console.log("Contador vale: "+contador);
+//  Loop FOR
+/*
+for(let i =1; i <=10; i++){
+     console.log("Contador vale: "+i);
+ }
+
+
+ Obs: Normalmente, variaveis de controle de repetição são chamados de "i", "j", "k".  */
+
+// Loop para acessar arrays
+
+const alunos = ["Chaves", "Chapolin", "Seu Madruga", "Kiko", "Jaiminho", "Bruxa do 71"];
+
+/*
+for(let i =0; i < alunos.length; i++ ){
+    console.log(alunos[i]);
+} */
+
+// Loop exclusivo dp JS para arrays for/of
+for( const aluno of alunos ){
+    console.log(aluno);
+}
+
+// Loop exclusivo do JS para objetos: for/in
+
+const livro = {
+    titulo: "HTML5",
+    autor: "Maujor",
+    site: "http://maujor.com",
+    ano: 2016
+};
+
+console.log("--------------");
+
+for(const prop in livro){
+    console.log(livro[prop]);
+
 }
