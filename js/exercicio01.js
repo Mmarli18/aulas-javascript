@@ -1,8 +1,8 @@
 `use script`;
 
 
-let nota1 = 1;
-let nota2 = 3;
+let nota1 = 10;
+let nota2 = 5;
 
 const media = (nota1 + nota2) / 2;
 
