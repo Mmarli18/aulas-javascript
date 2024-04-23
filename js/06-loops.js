@@ -37,7 +37,7 @@ for(let i =0; i < alunos.length; i++ ){
     console.log(alunos[i]);
 } */
 
-// Loop exclusivo dp JS para arrays for/of
+// Loop exclusivo dp JS para arrays for/of - acessando cada aluno dentro do array alunos
 for( const aluno of alunos ){
     console.log(aluno);
 }
