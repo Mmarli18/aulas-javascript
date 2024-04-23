@@ -1,4 +1,4 @@
-`use script`;
+`use strict`;
 
 // Requisitos para aprovação
 const mediaMinima = 7;

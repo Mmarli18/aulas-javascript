@@ -1,4 +1,4 @@
-'use script';
+'use strict';
 /* VETOR (Array de uma dimensão) */
 
 // Sinal de colchete [] significa uma lista
