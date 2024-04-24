@@ -1,4 +1,4 @@
-`use script`;
+`use strict`;
 
 /* Criar arrays [dentro criar 3 objetos {dentro do objeto colocar as informações solicitadas no exercicio id e nome},]   */
 
