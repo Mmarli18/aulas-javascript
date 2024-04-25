@@ -78,4 +78,26 @@ const listaDeEditores = [
         nome: "Xcode",
         finalidade: "Desenvolvimento de aplicações iOS"
     }
-]
+];
+
+// Acessando/selecionando a lista que será usada no HTML
+
+const lista = document.querySelector(".lista");
+console.log(lista);
+
+// Percorrer (loop) o array de listaDeEditores, criar os itens <li> com conteudos do array e adiciona-los à lsita HTML.
+
+// For (antes do OF - variavel/constante de acesso dar o nome que quiser)
+// após OF - array que criarmos anteriormente
+
+for (const editor of listaDeEditores) {
+    // Etapa 1: Criar elemento <li>
+    const item = document.createElement("li");
+
+    // Etapa 2: adicionar conteudo ao novo elemento (ex: tag negrito <b>)
+    item.innerHTML = `<b>${editor.nome}</b>: ${editor.finalidade}`;
+
+    // Etapa 3: adicionar o elemento à lista <ol>
+    lista.appendChild(item);
+    
+}
