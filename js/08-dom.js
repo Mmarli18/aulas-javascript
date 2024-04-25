@@ -101,3 +101,12 @@ for (const editor of listaDeEditores) {
     lista.appendChild(item);
     
 }
+
+// Criando/configurando atributos HTML via JS
+
+const linksDeReferencia = document.querySelectorAll(".referencias a");
+
+for (const link of linksDeReferencia) {
+    // Colocando atributo target valendo _blank em cada link
+    link.setAttribute("target", "_blank");
+}
