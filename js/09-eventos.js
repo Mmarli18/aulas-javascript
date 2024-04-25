@@ -5,6 +5,7 @@ const mensagem = document.querySelector("#mensagem");
 const pagina = document.querySelector("body");
 const video = document.querySelector("video");
 
+
 // Criando um objeto de audio referenciando o arquivo que queremos usar
 const efeitoSonoro = new Audio();
 efeitoSonoro.src = "wow.wav";
@@ -56,5 +57,18 @@ botao.addEventListener("click", function(){
 // Toggle alterna automaticamente entre os estados da classe (usuario clica abre e clica novamente fecha o elemento)
     pagina.classList.toggle("noturno");
     divContainer.classList.toggle("noturno");
+    
+
+    /* 1) Aplicar um efeito de mudança de cores suave 
+    
+    2) Fazer o botão mudar de texto, ou seja, inicia com o texto ativar e troca para o texto desativar*/
+
+   pagina.style.transition = "1s";
+   divContainer.style.transition = "1s"
+   
+   botao.removeAttribute("hidden");
+   botao.click;
+   
+
 
 });
