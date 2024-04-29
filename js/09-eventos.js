@@ -24,7 +24,7 @@ imagem.src = "meme.gif";
 /*   O primeiro parâmetro do addEventListener é o tipo de evento que queremos "ouvir/monitorar". O segundo parâmentro é uma função (conhecida como callback) responsável por executar ações no momento em que o evento acontecer.
 Dispara uma ação/evento quando clica no elemento indicado*/
 
-exemplo01.addEventListener("click", function(){
+exemplo01.addEventListener("click", function () {
     // Exibindo um texto no parágrafo mensagem
     mensagem.textContent = "Parabéns, Evento acionado com sucesso!";
 
@@ -42,7 +42,7 @@ exemplo01.addEventListener("click", function(){
 
     // Executando o video 
     video.removeAttribute("hidden");
-    video.play(); 
+    video.play();
 
 });
 
@@ -52,23 +52,30 @@ exemplo01.addEventListener("click", function(){
 const divContainer = document.querySelector(".container");
 const botao = document.querySelector("#noturno");
 
-botao.addEventListener("click", function(){
-/*     alert("Tricolooooooor"); */    
-// Toggle alterna automaticamente entre os estados da classe (usuario clica abre e clica novamente fecha o elemento)
+botao.addEventListener("click", function () {
+    /*     alert("Tricolooooooor"); */
+    // Toggle alterna automaticamente entre os estados da classe (usuario clica abre e clica novamente fecha o elemento)
     pagina.classList.toggle("noturno");
     divContainer.classList.toggle("noturno");
-    
 
-    /* 1) Aplicar um efeito de mudança de cores suave 
-    
-    2) Fazer o botão mudar de texto, ou seja, inicia com o texto ativar e troca para o texto desativar*/
 
-   pagina.style.transition = "1s";
-   divContainer.style.transition = "1s"
-   
-   botao.removeAttribute("hidden");
-   botao.click;
-   
+    //  1) Aplicar um efeito de mudança de cores suave 
 
+    pagina.style.transition = "1s";
+    divContainer.style.transition = "1s"
 
 });
+
+//   2) Fazer o botão mudar de texto, ou seja, inicia com o texto ativar e troca para o texto desativar
+
+function troca() {
+    if (botao.textContent == "Ativar") {
+        botao.textContent = "Desativar";
+        botao.value = "Desativar"
+    } else {
+        botao.textContent = "Ativar";
+        botao.value = "Ativar"
+    }
+}
+
+botao.addEventListener('click', troca);
